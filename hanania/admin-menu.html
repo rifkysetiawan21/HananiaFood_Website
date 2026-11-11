@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id" data-type="service" data-radius="soft" data-buttons="solid">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelola Menu - Hanania Food</title>
+  <meta name="description" content="Kelola menu catering.">
+  <meta name="page-type" content="service">
+  <meta name="site-kind" content="other">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%238B2626'/%3E%3Ctext x='32' y='45' font-size='38' font-weight='800' text-anchor='middle' fill='white' font-family='Arial,sans-serif'%3EH%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#utama">Lewati ke isi halaman</a>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="index.html">Hanania Food</a>
+      <button type="button" class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" aria-label="Utama"></nav>
+    </div>
+  </header>
+  <main id="utama">
+    <section class="halaman">
+      <div class="wrap">
+    <h1>Kelola menu</h1>
+    <div class="box stat" id="stat"></div>
+    <form class="bar">
+      <label class="cari">Nama menu <input id="n" required></label>
+      <label>Kategori <select id="k"><option>Nasi Box</option><option>Snack</option><option>Minuman</option></select></label>
+      <label>Harga (Rp) <input id="h" type="number" min="1000" required></label>
+      <button>Tambah menu</button>
+    </form>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Menu</th><th>Kategori</th><th>Harga</th><th>Status</th><th>Aksi</th></tr></thead>
+        <tbody id="isi"></tbody>
+      </table>
+    </div>
+      </div>
+    </section>
+  </main>
+  <div id="toast" role="status"></div>
+  <script src="js/data.js"></script>
+  <script src="js/admin-menu.js"></script>
+</body>
+</html>
