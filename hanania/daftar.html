@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar - Hanania Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth">
+  <aside class="auth-side">
+    <div class="hero-foto"><img src="img/menu/login-catering.jpeg" alt="" width="1600" height="900"></div>
+    <a class="logo" href="index.html">Hanania Food</a>
+    <div>
+      <h2>Pesan catering tanpa ribet</h2>
+      <p>Buat akun pelanggan sekali, lalu pesan, bayar, dan lacak pengiriman dari satu tempat.</p>
+    </div>
+    <small>Catering rapat, arisan, dan hajatan</small>
+  </aside>
+  <main class="auth-main">
+    <div class="auth-box">
+      <a class="auth-back" href="index.html">&larr; Kembali ke menu</a>
+      <h1>Buat akun</h1>
+      <p class="sub">Daftar sebagai pelanggan. Hanya butuh satu menit.</p>
+      <form class="f">
+        <label>Nama lengkap <input id="rn" autocomplete="name" required></label>
+        <label>Username <input id="ru" autocomplete="username" minlength="3" required></label>
+        <label>Kata sandi <input id="rp" type="password" autocomplete="new-password" minlength="3" required></label>
+        <label>Ulangi kata sandi <input id="rp2" type="password" autocomplete="new-password" required></label>
+        <label class="cek"><input type="checkbox" required> Saya setuju data pribadi saya diproses untuk keperluan pesanan.</label>
+        <button>Daftar</button>
+      </form>
+      <p class="auth-alt">Sudah punya akun? <a href="login.html">Masuk</a></p>
+    </div>
+  </main>
+  <div id="toast" role="status"></div>
+  <script src="js/data.js"></script>
+  <script src="js/daftar.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuk - Hanania Food</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth">
+  <aside class="auth-side">
+    <div class="hero-foto"><img src="img/menu/login-catering.jpeg" alt="" width="1600" height="900"></div>
+    <a class="logo" href="index.html">Hanania Food</a>
+    <div>
+      <h2>Selamat datang kembali</h2>
+      <p>Masuk untuk memesan nasi box, snack, dan paket, lalu pantau pesananmu sampai tiba.</p>
+    </div>
+    <small>Catering rapat, arisan, dan hajatan</small>
+  </aside>
+  <main class="auth-main">
+    <div class="auth-box">
+      <a class="auth-back" href="index.html">&larr; Kembali ke menu</a>
+      <h1>Masuk</h1>
+      <p class="sub">Gunakan akun yang sudah kamu daftarkan.</p>
+      <form class="f">
+        <label>Username <input id="lu" autocomplete="username" required></label>
+        <label>Kata sandi <input id="lp" type="password" autocomplete="current-password" required></label>
+        <button>Masuk</button>
+        <button type="button" class="tautan">Lupa kata sandi? Hubungi admin lewat WhatsApp</button>
+      </form>
+      <p class="auth-alt">Belum punya akun? <a href="daftar.html">Daftar sekarang</a></p>
+      <p class="demo">Akun demo: budi / 123 (pelanggan), admin / 123, kurir / 123.</p>
+    </div>
+  </main>
+  <div id="toast" role="status"></div>
+  <script src="js/data.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
